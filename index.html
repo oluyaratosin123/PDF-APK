@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/navbar-top-fixed.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>PDF APP</title>
+  </head>
+  <body>
+    <nav class="nav_bar navbar-expand-md">
+      <div
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img
+          src="/icons/caret-down-fill.svg"
+          width="15"
+          height="15"
+          title="Dropdown Menu"
+          alt="Dropdown"
+        />
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto mt-5">
+          <li class="nav-item p-3 main_nav">
+            <a href="#">
+              <img
+                src="/icons/house-door-fill.svg"
+                title="Home"
+                width="20"
+                height="20"
+                alt="Home"
+              />
+              <span class="label attr">Home</span></a
+            >
+          </li>
+          <li class="nav-item p-3">
+            <a href="">
+              <img
+                src="/icons/file-text.svg"
+                title="File"
+                width="20"
+                height="20"
+                alt="File"
+              />
+              <span class="label attr">Files</span></a
+            >
+          </li>
+          <li class="nav-item p-3 mt-2">
+            <a href="">
+              <img
+                src="/icons/people-fill.svg"
+                title="Shared"
+                width="20"
+                height="20"
+                alt="Shared"
+              />
+              <span class="label attr">Shared</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <form class="form-inline mt-2 mt-md-0">
+      <section class="form_input">
+        <a href="#" class="pdf_logo d-flex"
+          ><img
+            src="/icons/book-half.svg"
+            class="p-1 logo_icon"
+            width="40"
+            title="Yara's PDF"
+            height="40"
+            alt="Yara's PDF"
+        /></a>
+        <input
+          class="form-control mr-sm-2"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+          Search
+        </button>
+        <!--<a href="#"><img src="/icons/bell-fill.svg" class="notify" title="Notifications" width="20" height="20"  alt="Notifications"></a>-->
+
+        <!--Notification Modal-->
+        <section id="noticication-modal">
+          <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true" class="close_menu">&times;</span>
+                  </div>
+                  <h4 class="modal-title" id="myModalLabel">Notifications</h4>
+                </div>
+
+                <section id=""></section>
+
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                      <h5 class="mb-0">
+                        <a
+                          class="collapsed text-info"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Hello User
+                        </a>
+                      </h5>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      role="tabpanel"
+                      aria-labelledby="headingTwo"
+                    >
+                      <div class="card-body">Message from Yara Library</div>
+                    </div>
+                  </div>
+
+                  <hr />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-info">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            type="button"
+            class="btn btn-lg"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            <a href="#"
+              ><img
+                src="/icons/bell-fill.svg"
+                class="notify"
+                title="Notifications"
+                width="20"
+                height="20"
+                alt="Notifications"
+            /></a>
+          </div>
+        </section>
+
+        <!--Settings Modal-->
+        <section id="settings">
+            <a href="/settings.html"
+              ><img
+                src="/icons/person-circle.svg"
+                class="user"
+                title=" User Settings"
+                width="20"
+                height="20"
+                alt="User Settings"
+            /></a>
+
+        </section>
+      </section>
+    </form>
+
+    <main role="main" class="container main_content mt-5">
+      <div class="jumbotron">
+        <p>Awesomeness</p>
+      </div>
+    </main>
+    <!--
+    <details class="container" onclick="this.open = 'open'">
+      <div class="details">
+        <dt>Help?</dt>
+        <dd >
+          This could give you help with HTML5 but we need more implementations
+          to prove how things will work.
+        </dd>
+      </div>
+    </details>-->
+
+    <script src="app.js"></script>
+    <script src="/jquery-1.9.1.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/popper.min.js"></script>
+  </body>
+</html>
