@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  .nav_bar {
+    background-color: rgba(51, 51, 51, 0.904);
+    display: grid;
+    grid-template-columns: 30px 100px;
+    grid-template-rows: 100px 100px;
+    grid-column: 4;
+    grid-row: 6;
+    position: fixed;
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    .navbar-brand {
+      font-weight: 700;
+    }
+  }
+  .navbar-brand {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: block;
+    flex-direction: column;
+
+    .main_nav {
+      margin-top: 130px;
+    }
+  }
+}

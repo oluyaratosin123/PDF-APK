@@ -1,0 +1,15 @@
+.label {
+  display: none;
+}
+@media (min-width: 768px) {
+  .label {
+    display: flex;
+  }
+  .attr {
+    color: #efefef;
+
+    &:hover {
+        color: #e83e8d;
+    }
+  }
+}
